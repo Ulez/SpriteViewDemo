@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_idle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="idle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        app:layout_constraintStart_toEndOf="@+id/bt_idle"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <Button
+        android:id="@+id/bt_speakstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="speak_start"
+        app:layout_constraintStart_toEndOf="@+id/bt_start"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <Button
+        android:id="@+id/bt_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="loading"
+        app:layout_constraintStart_toEndOf="@+id/bt_ttsplaying"
+        app:layout_constraintTop_toTopOf="@+id/bt_ttsplaying"></Button>
+
+    <Button
+        android:id="@+id/bt_startcontinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start_continue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_idle"></Button>
+
+    <Button
+        android:id="@+id/bt_ttsplaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ttsplaying"
+        app:layout_constraintStart_toEndOf="@+id/bt_startcontinue"
+        app:layout_constraintTop_toBottomOf="@+id/bt_idle"></Button>
+
+    <fun.learnlife.spriteviewdemo.LogoView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
